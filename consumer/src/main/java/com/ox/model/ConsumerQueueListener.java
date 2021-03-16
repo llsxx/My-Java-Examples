@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 public class ConsumerQueueListener {
     @RabbitHandler
     public void queueListenerHandle(String msg){
-        System.out.println("消息内容："+msg);
+        System.out.println("开始接受信息...");
+        System.out.println("接收到的消息内容："+msg);
     }
 }
